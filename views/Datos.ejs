@@ -17,34 +17,34 @@
 </head>
 
 
-<body class="bg-success" data-bs-theme="dark">
+<body class="bg-dark" data-bs-theme="dark">
 
     <!-- Nav de los datos personales -->
-    <nav class="navbar navbar-dark bg-success-subtle" data-bs-theme="dark">
+    <nav class="navbar navbar-dark bg-secondary-subtle" data-bs-theme="dark">
         <div class="container">
             <!-- Título de la página con estilo de botón verde de contorno -->
-            <span class="btn btn-outline-success">Usuariotech</span>
+            <span class="btn btn-outline-danger">Usuariotech</span>
         </div>
     </nav>
 
     <!-- Formulario de los datos personales -->
     <div class="container mt-5 d-flex align-items-center justify-content-center flex-column p-5">
-        <form action="/Inicio" method="get" class="bg-success-subtle p-5">
+        <form action="/Inicio" method="get" class="bg-secondary-subtle p-5">
             <div class="row">
                 <!-- Título principal del formulario -->
                 <h2> Datos Personales </h2>
 
                 <!-- Primer bloque de inputs (Nombre 1 y Nombre 2) -->
                 <div class="col-md-6">
-                    <label for="validationServer01" class="form-label">1 Nombre</label>
-                    <input type="text" class="form-control is-valid" id="validationServer01" required>
+                    <label for="validationServer01" class="form-label">Primer Nombre</label>
+                    <input type="text" class="form-control is-valid" id="validationServer01" placeholder="<%= datosUsuario.nombre1 %>" disabled>
                     <div class="valid-feedback">
                     </div>
                 </div>
 
                 <div class="col-md-6">
-                    <label for="validationServer01" class="form-label">2 Nombre</label>
-                    <input type="text" class="form-control is-valid" id="validationServer01" required>
+                    <label for="validationServer01" class="form-label">Segudno Nombre</label>
+                    <input type="text" class="form-control is-valid" id="validationServer01" placeholder="<%= datosUsuario.nombre2 %>" disabled>
                     <div class="valid-feedback">
                     </div>
                 </div>
@@ -52,15 +52,15 @@
             <div class="row">
                 <!-- Segundo bloque de inputs (Apellido 1 y Apellido 2) -->
                 <div class="col-md-6">
-                    <label for="validationServer02" class="form-label">1 Apellido</label>
-                    <input type="text" class="form-control is-valid" id="validationServer02" required>
+                    <label for="validationServer02" class="form-label">Primer Apellido</label>
+                    <input type="text" class="form-control is-valid" id="validationServer02" placeholder="<%= datosUsuario.apellido1 %>" disabled>
                     <div class="valid-feedback">
                     </div>
                 </div>
 
                 <div class="col-md-6">
-                    <label for="validationServer02" class="form-label">2 Apellido</label>
-                    <input type="text" class="form-control is-valid" id="validationServer02" required>
+                    <label for="validationServer02" class="form-label">Segudno Apellido</label>
+                    <input type="text" class="form-control is-valid" id="validationServer02" placeholder="<%= datosUsuario.apellido2 %>" disabled>
                     <div class="valid-feedback">
                     </div>
                 </div>
@@ -69,14 +69,14 @@
                 <!-- Tercer bloque de inputs (Teléfono y Fecha de nacimiento) -->
                 <div class="col-md-6">
                     <label for="validationServer01" class="form-label">Telefono</label>
-                    <input type="text" class="form-control is-valid" id="validationServer01" required>
+                    <input type="text" class="form-control is-valid" id="validationServer01" placeholder="<%= datosUsuario.telefono %>" disabled>
                     <div class="valid-feedback">
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <label for="validationServer01" class="form-label">Fecha de nacimiento</label>
-                    <input type="date" class="form-control is-valid" id="validationServer01" required>
+                    <input type="text" class="form-control is-valid" id="validationServer01" placeholder="<%= datosUsuario.fecha_nacimiento %>" disabled>
                     <div class="valid-feedback">
                     </div>
                 </div>
@@ -85,13 +85,13 @@
                 <!-- Cuarto bloque de inputs (Dirección y Correo) -->
                 <div class="col-md-6">
                     <label for="validationServer01" class="form-label">Dirección</label>
-                    <input type="text" class="form-control is-valid" id="validationServer01" required>
+                    <input type="text" class="form-control is-valid" id="validationServer01" placeholder="<%= datosUsuario.direccion %>" disabled>
                     <div class="valid-feedback">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <label for="validationServer01" class="form-label">Correo</label>
-                    <input type="email" class="form-control is-valid" id="validationServer01" required>
+                    <input type="email" class="form-control is-valid" id="validationServer01" placeholder="<%= datosUsuario.correo %>" disabled>
                     <div class="valid-feedback">
                     </div>
                 </div>
@@ -100,14 +100,14 @@
                 <!-- Quinto bloque de inputs (Ciudad y N° Identificación) -->
                 <div class="col-md-6">
                     <label for="validationServer01" class="form-label">Ciudad</label>
-                    <input type="text" class="form-control is-valid" id="validationServer01" required>
+                    <input type="text" class="form-control is-valid" id="validationServer01" placeholder="<%= datosUsuario.ciudad %>" disabled>
                     <div class="valid-feedback">
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <label for="validationServer01" class="form-label">N° Identificación</label>
-                    <input type="text" class="form-control is-valid" id="validationServer01" required>
+                    <input type="text" class="form-control is-valid" id="validationServer01" placeholder="<%= datosUsuario.identificacion %>" disabled>
                     <div class="valid-feedback">
                     </div>
                 </div>
@@ -116,23 +116,18 @@
                 <!-- Sexto bloque de inputs (Ocupación y Tipo de sangre) -->
                 <div class="col-md-6">
                     <label for="validationServer01" class="form-label">Ocupación</label>
-                    <input type="text" class="form-control is-valid" id="validationServer01" required>
+                    <input type="text" class="form-control is-valid" id="validationServer01" placeholder="<%= datosUsuario.ocupacion %>" disabled>
                     <div class="valid-feedback">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <label for="validationServer01" class="form-label">Tipo de sangre</label>
-                    <input type="text" class="form-control is-valid" id="validationServer01" required>
+                    <input type="text" class="form-control is-valid" id="validationServer01" placeholder="<%= datosUsuario.rh %>" disabled>
                     <div class="valid-feedback">
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <!-- Botón para cerrar el formulario -->
-                <div class="navbar-dark bg-success-subtle d-flex justify-content-center">
-                    <button type="submit" class="btn btn-outline-success w-25">Cerrar</button>
-                </div>
-            </div>
+            
         </form>
     </div>
 
